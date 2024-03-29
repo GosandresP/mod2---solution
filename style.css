@@ -1,23 +1,26 @@
-/*Estilo Básico*/
+/* Estilo Básico */
 * {
     box-sizing: border-box;
 }
 
 body {
     background-color: white;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-   margin-bottom: 15px;
-text-align: center;
-color: #ff4532;
-font-size: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #ff4532;
+    font-size: 50px;
 }
 
 section {
     position: relative;
     padding: 15px;
     width: 90%;
+    margin: 0 auto;
 }
 
 p {
@@ -28,52 +31,36 @@ p {
 div {
     position: relative;
     background-color: gray;
-    border: 3.5px solid black;
+    border: 1px solid black;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
+    margin: 0 auto;
+}
+
+.title1,
+.title2,
+.title3 {
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin: -3px -3px 0px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
 }
 
 .title1 {
-    float: right;
-    width: 100px;
-    padding: 5px;
-    margin: -3px -3px 0px;
-    border: 3.5px solid black;
-    text-align: center;
-    font-size: 125%;
-    font-weight: bold;
     background-color: #FFB6C1;
-
 }
 
 .title2 {
-    float: right;
     color: white;
-    width: 100px;
-    padding: 5px;
-    margin: -3px -3px 0px;
-    border: 3.5px solid black;
-    text-align: center;
-    font-size: 125%;
-    font-weight: bold;
     background-color: #FF0000;
-
 }
 
 .title3 {
     color: black;
-    float: right;
-    width: 100px;
-    padding: 5px;
-     margin: -3px -3px 0px;
-    border: 3.5px solid black;
-    text-align: center;
-    font-size: 125%;
-    font-weight: bold;
     background-color: rgb(223, 212, 121);
-
 }
 
 .contenido {
@@ -82,16 +69,17 @@ div {
     background-color: gray;
     font-family: Helvetica;
     color: black;
-    margin: 3px ;
+    margin: 3px auto;
     height: 150px;
     overflow: auto;
 }
 
 .row {
     width: 90%;
+    margin: 0 auto;
 }
 
-/*Escritorio version*/
+/* Escritorio version */
 @media (min-width: 992px) {
     .column-jp-4 {
         float: left;
@@ -99,28 +87,25 @@ div {
     }
 }
 
-/*Tablet version*/
+/* Tablet version */
 @media (min-width: 768px) and (max-width: 991px) {
     .colmn-ap-6 {
         float: left;
         width: 50%;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
     }
 
     .colmn-pf-12 {
         float: left;
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
     }
 }
 
-/*celular version*/
+/* Celular version */
 @media (max-width: 767px) {
     .colmn-pf-12 {
         float: left;
         width: 100%;
     }
-
 }
